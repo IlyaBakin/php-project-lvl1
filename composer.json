@@ -8,5 +8,9 @@
             "email": "ivbakin@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+	"bin/brain-games"
+    ]
+
 }
