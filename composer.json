@@ -1,0 +1,12 @@
+{
+    "name": "ilyabakin/hexletv1",
+    "description": "hexletv1",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ilya Bakin",
+            "email": "ivbakin@gmail.com"
+        }
+    ],
+    "require": {}
+}
