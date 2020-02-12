@@ -19,31 +19,30 @@ function evenGame()
 
     $currentAnswers = [];
 
-    foreach ($questionsAndAnsers as $number ) {
-
+    foreach ($questionsAndAnsers as $number) {
         $answe = prompt("Question: {$number}");
         if ($number % 2 == 0) {
-        	if ($answe == 'yes') {
-        		array_push($currentAnswers, $number);
-        		 line('Correct!');
-        	} else {
-				line("'{$answe}' is wrong answer ;(. Correct answer was 'yes'.", $name);
-				line("Let's try again, %s!", $name);
-				$currentAnswers = [];
-        	}
+            if ($answe == 'yes') {
+                array_push($currentAnswers, $number);
+                 line('Correct!');
+            } else {
+                line("'{$answe}' is wrong answer ;(. Correct answer was 'yes'.", $name);
+                line("Let's try again, %s!", $name);
+                $currentAnswers = [];
+            }
         } else {
-        	if ($answe == 'no') {
-        		array_push($currentAnswers, $number);
-        		 line('Correct!');
-        	} else {
-        		line("'{$answe}' is wrong answer ;(. Correct answer was 'no'.", $name);
-				line("Let's try again, %s!", $name);
-				$currentAnswers = [];
-        	}
+            if ($answe == 'no') {
+                array_push($currentAnswers, $number);
+                 line('Correct!');
+            } else {
+                line("'{$answe}' is wrong answer ;(. Correct answer was 'no'.", $name);
+                line("Let's try again, %s!", $name);
+                $currentAnswers = [];
+            }
         }
         if (count($currentAnswers) == 3) {
-        	line("Congratulations, %s!", $name);
-        	return 1;
+            line("Congratulations, %s!", $name);
+            return 1;
         }
     }
 }
