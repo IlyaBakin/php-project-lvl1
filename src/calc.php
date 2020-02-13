@@ -7,5 +7,5 @@ use function cli\prompt;
 
 function calcGame()
 {
-    return 0;
+    return 0; 
 }
