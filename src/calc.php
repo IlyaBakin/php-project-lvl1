@@ -20,17 +20,12 @@ function calcGame()
         $randSecondNumber = rand(1, 100);
         $randMathOperation = $mathOperations[array_rand($mathOperations)];
         $answer = prompt("Question: $randFirstNumber $randMathOperation $randSecondNumber");
-        $currectAnswer = "";
-        switch ($randMathOperation) {
-            case '+':
-                $currectAnswer = $randFirstNumber + $randSecondNumber;
-                break;
-            case '-':
-                $currectAnswer = $randFirstNumber - $randSecondNumber;
-                break;
-            case '*':
-                $currectAnswer = $randFirstNumber * $randSecondNumber;
-                break;
+        if ($randMathOperation == "+") {
+            $currectAnswer = $randFirstNumber + $randSecondNumber;
+        } else if ($randMathOperation == "-") {
+            $currectAnswer = $randFirstNumber - $randSecondNumber;
+        } else if ($randMathOperation == "*") {
+            $currectAnswer = $randFirstNumber * $randSecondNumber;
         }
         if ($answer == $currectAnswer) {
             $currentAnswers[] = $currectAnswer;
