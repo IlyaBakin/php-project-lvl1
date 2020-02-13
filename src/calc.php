@@ -23,13 +23,13 @@ function calcGame()
         $currectAnswer = "";
         switch ($randMathOperation) {
             case '+':
-                $currectAnswer = $randFirstNumber+$randSecondNumber;
+                $currectAnswer = $randFirstNumber + $randSecondNumber;
                 break;
             case '-':
-                $currectAnswer = $randFirstNumber-$randSecondNumber;
+                $currectAnswer = $randFirstNumber - $randSecondNumber;
                 break;
             case '*':
-                $currectAnswer = $randFirstNumber*$randSecondNumber;
+                $currectAnswer = $randFirstNumber * $randSecondNumber;
                 break;
         }
         if ($answer == $currectAnswer) {
@@ -44,5 +44,5 @@ function calcGame()
         }
     }
     line("Congratulations, %s!", $name);
-    return 0; 
+    return 0;
 }
