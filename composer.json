@@ -2,6 +2,7 @@
     "name": "ilyabakin/hexletv1",
     "description": "hexletv1",
     "type": "project",
+    "version": "0.0.1",
     "authors": [
         {
             "name": "Ilya Bakin",
