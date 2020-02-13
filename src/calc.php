@@ -15,18 +15,29 @@ function calcGame()
     $mathOperations = ['+','-','*'];
 
     $currentAnswers = [];
-    while (count($currentAnswers) < 3) {
+    $currentAnswersCount = count($currentAnswers);
+
+    while ($currentAnswersCount < 3) {
+
         $randFirstNumber = rand(1, 100);
         $randSecondNumber = rand(1, 100);
+
         $randMathOperation = $mathOperations[array_rand($mathOperations)];
+
         $answer = prompt("Question: $randFirstNumber $randMathOperation $randSecondNumber");
-        if ($randMathOperation == "+") {
-            $currectAnswer = $randFirstNumber + $randSecondNumber;
-        } else if ($randMathOperation == "-") {
-            $currectAnswer = $randFirstNumber - $randSecondNumber;
-        } else if ($randMathOperation == "*") {
-            $currectAnswer = $randFirstNumber * $randSecondNumber;
+
+        switch ($randMathOperation) {
+            case '+':
+                $currectAnswer = $randFirstNumber + $randSecondNumber;
+                break;
+            case '-':
+                $currectAnswer = $randFirstNumber - $randSecondNumber;
+                break;
+            case '*':
+                $currectAnswer = $randFirstNumber * $randSecondNumber;
+                break;
         }
+
         if ($answer == $currectAnswer) {
             $currentAnswers[] = $currectAnswer;
             line("Your answer: %d", $answer);
@@ -39,5 +50,5 @@ function calcGame()
         }
     }
     line("Congratulations, %s!", $name);
-    return 0;
+    return true;
 }
