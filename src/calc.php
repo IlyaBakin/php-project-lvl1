@@ -5,14 +5,7 @@ namespace BrainGames\Cli;
 use function cli\line;
 use function cli\prompt;
 
-function run()
+function calcGame()
 {
-    evenGame();
-    return 0;
-}
-
-function runCalcGame()
-{
-    calcGame();
     return 0;
 }
