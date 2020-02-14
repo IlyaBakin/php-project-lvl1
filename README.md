@@ -7,5 +7,6 @@
 
 ## Run game:
 
-### braic-even
+### braic-even 
 ### brain-calc
+### brain-gcd
