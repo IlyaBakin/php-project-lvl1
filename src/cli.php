@@ -16,3 +16,9 @@ function runCalcGame()
     calcGame();
     return 0;
 }
+
+function runGcdGame()
+{
+    gcdGame();
+    return 0;
+}

@@ -15,10 +15,8 @@ function calcGame()
     $mathOperations = ['+','-','*'];
 
     $currentAnswers = [];
-    $currentAnswersCount = count($currentAnswers);
-
-    while ($currentAnswersCount < 3) {
-
+    
+    while (count($currentAnswers) < 3) {
         $randFirstNumber = rand(1, 100);
         $randSecondNumber = rand(1, 100);
 
