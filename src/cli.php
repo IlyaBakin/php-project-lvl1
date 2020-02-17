@@ -22,3 +22,9 @@ function runGcdGame()
     gcdGame();
     return 0;
 }
+
+function runProgressGame()
+{
+    progressGame();
+    return 0;
+}
