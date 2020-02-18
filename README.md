@@ -11,3 +11,4 @@
 ### brain-calc
 ### brain-gcd
 ### brain-progress
+### brain-prime
