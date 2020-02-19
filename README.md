@@ -10,8 +10,10 @@ php composer.phar global require ilyabakin/hexletv1:dev-master
 ```
 ## Run game:
 
+```ini
 braic-even 
 brain-calc
 brain-gcd
 brain-progress
 brain-prime
+```
